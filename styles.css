@@ -117,3 +117,8 @@ body{
   border-radius: 0px;
   filter: invert(1);/*Tone image change*/
 }
+
+/*CSS Format for links (active, pressed previously and after visited) remove all format*/
+a:link, a:visited, a:active, a::after{
+  text-decoration:none;
+}

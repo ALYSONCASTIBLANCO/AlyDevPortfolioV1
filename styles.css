@@ -60,21 +60,23 @@ body{
   border-radius: 0px 0px 0px 0px; 
 }
 .profilehomepage {
-  max-width: 50%; 
-  height: auto; 
-  border-radius: 226px; 
-}
-.contactimageslist {
-  display: inline-block;
-}
-.contacticons{
   max-width: 100%; 
   height: auto; 
+  border-radius: 50%; 
+}
+.contactimageslist {
+  display: grid;
+}
+.contacticons{
+  width: 60%; 
+  height: auto;
   border-radius: 0px;
   filter: invert(1);/*Tone image change*/
 }
 /* Button 1 */
 .buttoncontact {
+  width: 100%;
+  padding: 3%;
   display: flex; 
   align-items: center; 
   justify-content: center; 
@@ -110,14 +112,8 @@ body{
   height: 36px; 
   border-radius: 0px;
   filter: invert(1);/*Tone image change*/
+  padding-right: 1%;
 }
-.footericons2{
-  width: 34px; 
-  height: 36px;
-  border-radius: 0px;
-  filter: invert(1);/*Tone image change*/
-}
-
 /*CSS Format for links (active, pressed previously and after visited) remove all format*/
 a:link, a:visited, a:active, a::after{
   text-decoration:none;

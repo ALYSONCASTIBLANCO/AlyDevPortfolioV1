@@ -36,40 +36,36 @@
         <main>
             <!--A row to put all items in the center. Will be the row that will 
             store the content-->
-            <div class="row align-items-center">
+            <div class="row justify-content-around align-items-center" style="padding-bottom: 5%;">
                 <!--Column for the profile image-->
-                <div class="col-lg-8">
+                <div class="col-lg-5">
                     <img class="profilehomepage" alt="My Photo" src="./images/ALYSON_C.jpg"/>
                 </div>
                 <!--Column for the title, paragraph and links in general-->
-                <div class="col-lg-3">
+                <div class="col-lg-5">
                     <!--h1 class from Bootstrap to customize the texts-->
-                    <div><h1 class="h1" style="font-family: Arial, Helvetica, sans-serif; text-align: center; font-weight: 700; color: #F3F4F6FF;">I'm Alyson Castiblanco</h1></div>
+                    <div><h1 class="h1" style="font-family: Arial, Helvetica, sans-serif; text-align: center; font-weight: 700; color: #F3F4F6FF; padding-bottom: 10%;">I'm Alyson Castiblanco</h1></div>
                     <!--Paragraph with class lead to cutomize the paragraph with responsive.-->
                     <div>
-                        <p class="lead" style="  font-family: Inter; text-align: justify; font-weight: 400;color: #F3F4F6FF;">I'm Mechatronics Engineer, with skills in 
+                        <p class="lead" style="  font-family: Inter; text-align: justify; font-weight: 400;color: #F3F4F6FF; padding-bottom: 5%;">I'm Mechatronics Engineer, with skills in 
                       Robotics, programming and electronics. Also, 
                       I'm passionated fullstack developer and Computer 
                       Science Teacher. Welcome to my site, and I'll show you
                       my work.</p>
-                      <div>
-                        <ul>
-                            <li class="contactimageslist"><a target="_blank" href="https://www.linkedin.com/in/alyson-valeria-castiblanco-casta%C3%B1eda/"><img class="contacticons" alt="Linkedin" src="./images/linkedin_icon.svg"/></a></li>
-                            <li class="contactimageslist"><a target="_blank" href="https://github.com/ALYSONCASTIBLANCO"><img class="contacticons" alt="GitHub" src="./images/github_icon.svg"/></a></li>
-                            <li class="contactimageslist"><img class="contacticons" alt="CV" src="./images/pdf_icon.svg"/></li>
-                            <li class="contactimageslist"><img class="contacticons" alt="Gmail" src="./images/mail_icon.svg"/></li>
-                        </ul>    
+                    </div>
+                    <div class="row row-cols-4" style="padding-bottom: 5%;">
+                            <div class="col"><a target="_blank" href="https://www.linkedin.com/in/alyson-valeria-castiblanco-casta%C3%B1eda/"><img class="contacticons" alt="Linkedin" src="./images/linkedin_icon.svg"/></a></div>
+                            <div class="col"><a target="_blank" href="https://github.com/ALYSONCASTIBLANCO"><img class="contacticons" alt="GitHub" src="./images/github_icon.svg"/></a></div>
+                            <div class="col"><img class="contacticons" alt="CV" src="./images/pdf_icon.svg"/></div>
+                            <div class="col"><img class="contacticons" alt="Gmail" src="./images/mail_icon.svg"/></div>    
                       </div>
-                      <div>
+                      <div class="row row-cols-3">
                         <!--The same principle with buttons-->
-                        <ul class="menubuttons">
                             <!--Creating buttons with tag "button"-->
-                            <li class="contactimageslist"><button class="buttoncontact" onclick="location.href='./AboutMe.html'">About me</button></li>
-                            <li class="contactimageslist"><button class="buttoncontact" onclick="location.href='./Projects.html'">Projects</button></li>
-                            <li class="contactimageslist"><button class="buttoncontact" onclick="location.href='./Contact.html'">Contact</button></li>
-                        </ul>
-                      </div>
-                    </div>              
+                            <div class="col"><button class="buttoncontact" onclick="location.href='./AboutMe.html'">About me</button></div>
+                            <div class="col"><button class="buttoncontact" onclick="location.href='./Projects.html'">Projects</button></div>
+                            <div class="col"><button class="buttoncontact" onclick="location.href='./Contact.html'">Contact</button></div>
+                      </div>              
                 </div>
             </div>          
             <footer>
@@ -78,21 +74,16 @@
                 <div class="d-flex flex-wrap justify-content-between align-items-stretch py-3 border-top">
                     <!--Column for the email-->
                     <div class="col-md-4 d-flex align-items-center">
-                        <ul>
-                            <li class="contactimageslist"><img class="footericons" alt="mail" src="./images/mail_icon.svg"/></li>
-                            <li class="contactimageslist"><p class="fs-6" style="font-family: Inter; color: #F3F4F6FF;">castiblanco.castaneda.alyson.val@gmail.com</p></li>
-                        </ul>              
+                            <img class="footericons" alt="mail" src="./images/mail_icon.svg"/></li>
+                            <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF; margin-bottom: 0;">castiblanco.castaneda.alyson.val@gmail.com</p>              
                     </div>
                     <!--Column for social media-->
                     <div class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                        <ul>
-                            <li class="contactimageslist"><a target="_blank" href="https://www.linkedin.com/in/alyson-valeria-castiblanco-casta%C3%B1eda/"><img class="footericons2" alt="Linkedin" src="./images/linkedin_icon.svg"/></li></a>
-                            <li class="contactimageslist"><a target="_blank" href="https://github.com/ALYSONCASTIBLANCO"><img class="footericons2" alt="GitHub" src="./images/github_icon.svg"/></a></li>
-                        </ul>
+                        <a target="_blank" href="https://www.linkedin.com/in/alyson-valeria-castiblanco-casta%C3%B1eda/"><img class="footericons" alt="Linkedin" src="./images/linkedin_icon.svg"/></a>
+                        <a target="_blank" href="https://github.com/ALYSONCASTIBLANCO"><img class="footericons" alt="GitHub" src="./images/github_icon.svg"/></a>
                     </div>
 
-                </div>
-            
+                </div>            
             </footer>
         </main>
 

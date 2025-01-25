@@ -1,57 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Inserting Bootstrap using CDN link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--Inserting CSS Sheet for customized styles-->
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
     <title>AlyDev- My Projects</title>
 </head>
+
 <body>
-        <!--We will use a container fluid to distribute all contents in 100% width.-->
-        <div class="container-fluid">
-            <header>
-                <!--Row that will contain the header-->
-                <div class="row">
-                    <!--Column to put the logo-->
-                    <div class="col-lg">
-                        <a href="./Homepage.html"><h1 class="h1" style="font-family: Arial, Helvetica, sans-serif; color: #F3F4F6FF;  font-weight: 700;">AlyDev</h1></a>
-                    </div>
-                    <!--Column to put the quick access bar menu-->
-                    <div class="col-lg-4">
-                        <div class="header-menu">
-                            <a href="./AboutMe.html"><ul class="header-menu-item">About me</ul></a>
-                            <a href="./Projects.html"><ul class="header-menu-item">My Projects</ul></a>
-                            <a href="./Contact.html"><ul class="header-menu-item">Contact</ul></a>
-                            <ul class="header-menu-item"><img class="lang_icons" alt="Esp" src="./images/spain_icon.png"></img></ul>
-                            <a href="./Homepage.html"><ul class="header-menu-item"><img class="lang_icons" alt="Eng" src="./images/uk_icon.png"></img></ul></a>
-                            <ul class="header-menu-item"><img class="lang_icons" alt="Por" src="./images/brazil_icon.png"></img></ul>
-                        </div>
+    <!--We will use a container fluid to distribute all contents in 100% width.-->
+    <div class="container-fluid">
+        <header>
+            <!--Row that will contain the header-->
+            <div class="row">
+                <!--Column to put the logo-->
+                <div class="col-lg">
+                    <a href="./Homepage.html">
+                        <h1 class="h1"
+                            style="font-family: Arial, Helvetica, sans-serif; color: #F3F4F6FF;  font-weight: 700;">
+                            AlyDev</h1>
+                    </a>
+                </div>
+                <!--Column to put the quick access bar menu-->
+                <div class="col-lg-4">
+                    <div class="header-menu">
+                        <a href="./AboutMe.html">
+                            <ul class="header-menu-item">About me</ul>
+                        </a>
+                        <a href="./Projects.html">
+                            <ul class="header-menu-item">My Projects</ul>
+                        </a>
+                        <a href="./Contact.html">
+                            <ul class="header-menu-item">Contact</ul>
+                        </a>
+                        <ul class="header-menu-item"><img class="lang_icons" alt="Esp"
+                                src="./images/spain_icon.png"></img></ul>
+                        <a href="./Homepage.html">
+                            <ul class="header-menu-item"><img class="lang_icons" alt="Eng"
+                                    src="./images/uk_icon.png"></img></ul>
+                        </a>
+                        <ul class="header-menu-item"><img class="lang_icons" alt="Por"
+                                src="./images/brazil_icon.png"></img></ul>
                     </div>
                 </div>
-            </header>
-            <main>
-                <footer>
-                    <!--An additional row for the footer-->
-                    <!--A flex box to adapt the content, with padding, contenf justified and aligned-->
-                    <div class="d-flex flex-wrap justify-content-between align-items-stretch py-3 border-top">
-                        <!--Column for the email-->
-                        <div class="col-md-4 d-flex align-items-center">
-                                <img class="footericons" alt="mail" src="./images/mail_icon.svg"/></li>
-                                <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF; margin-bottom: 0;">castiblanco.castaneda.alyson.val@gmail.com</p>              
-                        </div>
-                        <!--Column for social media-->
-                        <div class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                            <a target="_blank" href="https://www.linkedin.com/in/alyson-valeria-castiblanco-casta%C3%B1eda/"><img class="footericons" alt="Linkedin" src="./images/linkedin_icon.svg"/></a>
-                            <a target="_blank" href="https://github.com/ALYSONCASTIBLANCO"><img class="footericons" alt="GitHub" src="./images/github_icon.svg"/></a>
-                        </div>    
-                    </div>            
-                </footer>
-            </main>
-        </div>
-    
+            </div>
+        </header>
+        <main>
+            <br>
+            <!--h1 class from Bootstrap to customize the texts-->
+            <div>
+                <h1 class="h1"
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF; padding-bottom: 2%;">
+                    My skills and projects</h1>
+            </div>
+            <div>
+                <h1 class="h2"
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF; padding-bottom: 2%;">
+                    Technologies</h1>
+            </div>
+            <div class="row row-cols-7" style="padding-bottom: 5%;">
+                <div class="col"><img class="skillsicons" alt="Python" src="./images/Python-logo-notext.svg.png" />
+                </div>
+                <div class="col"><img class="skillsicons" alt="C" src="./images/C_Logo.png" /></div>
+                <div class="col"><img class="skillsicons" alt="C++" src="./images/C++_logo.png" /></div>
+                <div class="col"><img class="skillsicons" alt="Java" src="./images/java.png" /></div>
+                <div class="col"><img class="skillsicons" alt="HTML" src="./images/HTML5_logo_and_wordmark.svg.png" />
+                </div>
+                <div class="col"><img class="skillsicons" alt="CSS" src="./images/logo-CSS3.svg" /></div>
+                <div class="col"><img class="skillsicons" alt="JS"
+                        src="./images/png-transparent-javascript-logo-html-javascript-logo-angle-text-rectangle-thumbnail-removebg-preview.png" />
+                </div>
+            </div>
+            <div>
+                <h1 class="h2"
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF; padding-bottom: 2%;">
+                    Frameworks</h1>
+            </div>
+            <div class="row row-cols-4" style="padding-bottom: 5%;">
+                <div class="col"><img class="skillsicons" alt="React" src="./images/React_(web_framework)-Logo.png" />
+                </div>
+                <div class="col"><img class="skillsicons2" alt="Vue" src="./images/VueJS.png" /></div>
+                <div class="col"><img class="skillsicons2" alt="Node"
+                        src="./images/nodejs-1-logo-png-transparent.png" /></div>
+                <div class="col"><img class="skillsicons2" alt="Express" src="./images/express-js.png" /></div>
+            </div>
+            <div>
+                <h1 class="h2"
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF; padding-bottom: 2%;">
+                    Databases</h1>
+            </div>
+            <div class="row row-cols-3" style="padding-bottom: 5%;">
+                <div class="col"><img class="skillsicons" alt="SQL" src="./images/Sql_data_base_with_logo.png" /></div>
+                <div class="col"><img class="skillsicons3" alt="MySQL" src="./images/image (6).png" /></div>
+                <div class="col"><img class="skillsicons3" alt="Mongo" src="./images/mongodblogo.png" /></div>
+            </div>
+            <div class="row row-cols-3">
+                <div class="col-md-2">
+                    <div>
+                        <h1 class="h2"
+                            style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF; padding-bottom: 2%;">
+                            My Projects</h1>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <a href="#educationprojects"><img class="book" alt="icon"
+                            src="./images/book-bookmark-regular-24.png" /></a>
+                    <p style="font-family: Inter; color: #F3F4F6FF;">Education</p>
+                </div>
+                <div class="col-md-2">
+                    <a href="#devprojects"><img class="book" alt="icon" src="./images/code-alt-regular-24.png" /></a>
+                    <p style="font-family: Inter; color: #F3F4F6FF;">Development</p>
+                </div>
+            </div>
+            <div id="devprojects" class="row row-cols-4" style="margin-left: 0.5%; margin-right: 0.5%;">
+                <div class="card" style="width: 18rem; margin-right: 2rem; margin-bottom: 2rem;">
+                    <img alt="Project" src="./images/projects/neureka.png" class="card-img-top" />
+                    <div class="card-body">
+                        <h5>Neureka GS</h5>
+                        <p>Application that seeks to promote and reinforce computational thinking skills for people with
+                            neurodivergences. I was a mentor in this project, which participated in the VIII National
+                            Programming Contest of Fedesoft.</p>
+                        <p>HTML, CSS, JS, Bootstrap, MySQL, PHP</p>
+                        <div style="display: flex; justify-content: right;"><a target="_blank"
+                                href="https://www.youtube.com/watch?v=YBjoYJ7LCDM"><img class="skillsicons" alt="link"
+                                    src="./images/youtube-logo-24.png" /></a></div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; margin-right: 2rem; margin-bottom: 2rem;">
+                    <img alt="Project" src="./images/projects/salvando4patas.PNG" class="card-img-top" />
+                    <div class="card-body">
+                        <h5>Salvando4Patas al 100%</h5>
+                        <p>Project carried out for an animal protection NGO. It is still in the development and
+                            deployment process.</p>
+                        <p>HTML, CSS, JS, Bootstrap, MySQL, PHP, NextJS, Tailwind, Springboot, MySQL</p>
+                        <div style="display: flex; justify-content: right;"><a target="_blank"
+                                href="https://github.com/ALYSONCASTIBLANCO/salvando4patasal100mockup"><img
+                                    class="skillsicons" alt="link" src="./images/github_icon.svg" /></a></div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; margin-right: 2rem; margin-bottom: 2rem;">
+                    <img alt="Project" src="./images/projects/cochesdeocc.PNG" class="card-img-top" />
+                    <div class="card-body">
+                        <h5>Coches de Occidente</h5>
+                        <p>UI/UX project carried out for the company Coches de Occidente, who wanted a complete design
+                            for their website, and it was carried out in accordance with the company's requirements.</p>
+                        <p>HTML, CSS (Mockup).</p>
+                        <div style="display: flex; justify-content: right;"><a target="_blank"
+                                href="https://github.com/ALYSONCASTIBLANCO/cochesmockup"><img class="skillsicons"
+                                    alt="link" src="./images/github_icon.svg" /></a></div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; margin-right: 2rem; margin-bottom: 2rem;">
+                    <img alt="Project" src="./images/projects/betorplay.PNG" class="card-img-top" />
+                    <div class="card-body">
+                        <h5>BetOrPlay.com</h5>
+                        <p>Personal project that seeks to replicate an online betting site. Still under development on
+                            the front and backend.</p>
+                        <p>React, Bootstrap, NodeJS, Express, MongoDB.</p>
+                        <div style="display: flex; justify-content: right;"><a target="_blank"
+                                href="https://github.com/ALYSONCASTIBLANCO/BetOrPlayReactPage"><img class="skillsicons"
+                                    alt="link" src="./images/github_icon.svg" /></a></div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; margin-right: 2rem; margin-bottom: 2rem;">
+                    <img alt="Project" src="./images/projects/yourtaskapi.PNG" class="card-img-top" />
+                    <div class="card-body">
+                        <h5>Your Task API</h5>
+                        <p>Frontend design required for technical testing, with the aim of obtaining information from an
+                            API and projecting it on a simple page.</p>
+                        <p>React, Bootstrap, CSS.</p>
+                        <div style="display: flex; justify-content: right;"><a target="_blank"
+                                href="https://github.com/ALYSONCASTIBLANCO/ToDoAppReact"><img class="skillsicons"
+                                    alt="link" src="./images/github_icon.svg" /></a></div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; margin-right: 2rem; margin-bottom: 2rem;">
+                    <img alt="Project" src="./images/projects/Diapositiva2.png" class="card-img-top" />
+                    <div class="card-body">
+                        <h5>Hardware In The Loop Python HMI</h5>
+                        <p>Degree project for Mechatronics Engineering carried out in Python under the Raspberry PI 3B+
+                            operating system. It replicates the operation of two simulated mechanical plants through the
+                            fourth-order Runge-Kutta numerical method and thus recreates their behavior in real time.
+                        </p>
+                        <p>Python, MatLab, Simulink.</p>
+                        <div style="display: flex; justify-content: right;"><a target="_blank"
+                                href="https://repositorio.ecci.edu.co/handle/001/2965"><img class="skillsicons"
+                                    alt="link" src="./images/link-alt-regular-24.png" /></a></div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; margin-right: 2rem; margin-bottom: 2rem;">
+                    <img alt="Project" src="./images/projects/myprogramming.PNG" class="card-img-top" />
+                    <div class="card-body">
+                        <h5>My Programming Challenges Page</h5>
+                        <p>My Programming Challenges Site is an Educational project that can help to Programming
+                            beginners to understand the fundamentals behind this science through flowcharts. Is
+                            expanding and is progressing in accordance to the Students process. In the long term, we
+                            hope to deploy a responsive and interactive site using HTML, CSS and JavaScript Frameworks-
+                            free.
+                        </p>
+                        <p>HTML, CSS.</p>
+                        <div style="display: flex; justify-content: right;"><a target="_blank"
+                                href="https://alysoncastiblanco.github.io/AlyDevProgrammingPage/myfirstpage.html"><img class="skillsicons"
+                                    alt="link" src="./images/link-alt-regular-24.png" /></a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="educationprojects">
+                <h1 class="h2" style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF; padding-bottom: 2%;">
+                    Some of my Students Projects guided by me</h1>        
+            </div>
+            <footer>
+                <!--An additional row for the footer-->
+                <!--A flex box to adapt the content, with padding, contenf justified and aligned-->
+                <div class="d-flex flex-wrap justify-content-between align-items-stretch py-3 border-top">
+                    <!--Column for the email-->
+                    <div class="col-md-4 d-flex align-items-center">
+                        <img class="footericons" alt="mail" src="./images/mail_icon.svg" /></li>
+                        <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF; margin-bottom: 0;">
+                            castiblanco.castaneda.alyson.val@gmail.com</p>
+                    </div>
+                    <!--Column for social media-->
+                    <div class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                        <a target="_blank"
+                            href="https://www.linkedin.com/in/alyson-valeria-castiblanco-casta%C3%B1eda/"><img
+                                class="footericons" alt="Linkedin" src="./images/linkedin_icon.svg" /></a>
+                        <a target="_blank" href="https://github.com/ALYSONCASTIBLANCO"><img class="footericons"
+                                alt="GitHub" src="./images/github_icon.svg" /></a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
 </body>
+
 </html>

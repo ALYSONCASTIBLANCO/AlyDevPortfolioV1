@@ -130,3 +130,21 @@ a:link, a:visited, a:active, a::after{
 .languageimg{
   width: 50%;
 }
+.skillsicons{
+  width: 100%; 
+  height: auto;
+  border-radius: 0px;
+}
+.skillsicons2{
+  width: 70%; 
+  height: auto;
+  border-radius: 0px;
+}
+.skillsicons3{
+  width: 60%; 
+  height: auto;
+  border-radius: 0px;
+}
+p{
+  text-align: justify;
+}

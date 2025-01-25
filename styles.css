@@ -118,3 +118,15 @@ body{
 a:link, a:visited, a:active, a::after{
   text-decoration:none;
 }
+.utp{
+  width: 30%;
+}
+.ecci{
+  width: 50%;
+}
+.book{
+  width: 15%;
+}
+.languageimg{
+  width: 50%;
+}

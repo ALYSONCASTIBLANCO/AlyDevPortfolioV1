@@ -145,6 +145,19 @@ a:link, a:visited, a:active, a::after{
   height: auto;
   border-radius: 0px;
 }
+h3{
+  color: #FFFFFFFF;
+}
 p{
   text-align: justify;
+  font-style: normal;
+}
+.devlogo{
+  width: 50%;
+  height: auto;
+  filter: invert(1);
+}
+.explogo{
+  width: 50%;
+  height: auto;
 }

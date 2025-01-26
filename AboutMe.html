@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <title>AlyDev- About me</title>
 </head>
+
 <body>
     <!--We will use a container fluid to distribute all contents in 100% width.-->
     <div class="container-fluid">
@@ -16,17 +20,32 @@
             <div class="row">
                 <!--Column to put the logo-->
                 <div class="col-lg">
-                    <a href="./Homepage.html"><h1 class="h1" style="font-family: Arial, Helvetica, sans-serif; color: #F3F4F6FF;  font-weight: 700;">AlyDev</h1></a>
+                    <a href="./Homepage.html">
+                        <h1 class="h1"
+                            style="font-family: Arial, Helvetica, sans-serif; color: #F3F4F6FF;  font-weight: 700;">
+                            AlyDev</h1>
+                    </a>
                 </div>
                 <!--Column to put the quick access bar menu-->
                 <div class="col-lg-4">
                     <div class="header-menu">
-                        <a href="./AboutMe.html"><ul class="header-menu-item">About me</ul></a>
-                        <a href="./Projects.html"><ul class="header-menu-item">My Projects</ul></a>
-                        <a href="./Contact.html"><ul class="header-menu-item">Contact</ul></a>
-                        <ul class="header-menu-item"><img class="lang_icons" alt="Esp" src="./images/spain_icon.png"></img></ul>
-                        <a href="./Homepage.html"><ul class="header-menu-item"><img class="lang_icons" alt="Eng" src="./images/uk_icon.png"></img></ul></a>
-                        <ul class="header-menu-item"><img class="lang_icons" alt="Por" src="./images/brazil_icon.png"></img></ul>
+                        <a href="./AboutMe.html">
+                            <ul class="header-menu-item">About me</ul>
+                        </a>
+                        <a href="./Projects.html">
+                            <ul class="header-menu-item">My Projects</ul>
+                        </a>
+                        <a href="./Contact.html">
+                            <ul class="header-menu-item">Contact</ul>
+                        </a>
+                        <ul class="header-menu-item"><img class="lang_icons" alt="Esp"
+                                src="./images/spain_icon.png"></img></ul>
+                        <a href="./Homepage.html">
+                            <ul class="header-menu-item"><img class="lang_icons" alt="Eng"
+                                    src="./images/uk_icon.png"></img></ul>
+                        </a>
+                        <ul class="header-menu-item"><img class="lang_icons" alt="Por"
+                                src="./images/brazil_icon.png"></img></ul>
                     </div>
                 </div>
             </div>
@@ -34,82 +53,179 @@
         <main>
             <br>
             <!--h1 class from Bootstrap to customize the texts-->
-            <div><h1 class="h1" style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF;">About me</h1></div>
+            <div>
+                <h1 class="h1" style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF;">
+                    About me</h1>
+            </div>
             <!--A row to put all items in the center. Will be the row that will 
             store the content-->
             <div class="row justify-content-around align-items-center">
                 <!--Column for the profile image-->
                 <div class="col-lg-5">
-                    <img class="profilehomepage" alt="My Photo" src="./images/WhatsApp Image 2024-12-23 at 10.54_edited.jpg"/>
+                    <img class="profilehomepage" alt="My Photo"
+                        src="./images/WhatsApp Image 2024-12-23 at 10.54_edited.jpg" />
                 </div>
                 <!--Column for the title, paragraph and links in general-->
                 <div class="col-lg-5">
                     <!--Paragraph with class lead to cutomize the paragraph with responsive.-->
                     <div>
-                        <p class="lead" style="  font-family: Inter; text-align: justify; font-weight: 400;color: #F3F4F6FF;">
-                            My name is Alyson Castiblanco, I'm a 
-                            Colombian Mechatronics Engineer, wtih 
-                            technical studies in Automation, Robotics and 
-                            Software Development. From 2021, I'm working 
-                            strongly in fullstack development freelance 
+                        <p class="lead"
+                            style="  font-family: Inter; text-align: justify; font-weight: 400;color: #F3F4F6FF;">
+                            My name is Alyson Castiblanco, I'm a
+                            Colombian Mechatronics Engineer, wtih
+                            technical studies in Automation, Robotics and
+                            Software Development. From 2021, I'm working
+                            strongly in fullstack development freelance
                             projects, and also, I have experience in academic
                             fields teaching Computer Science to people of all
                             ages. Continue navigating if you want to know more</p>
                     </div>
                     <div class="row row-cols-3">
                         <!--The same principle with buttons-->
-                            <!--Creating buttons with tag "button"-->
-                            <div class="col"><button class="buttoncontact" onclick="location.href='#education'">Education</button></div>
-                            <div class="col"><button class="buttoncontact" onclick="location.href='.#'">Experiences</button></div>
-                            <div class="col"><button class="buttoncontact" onclick="location.href='#languages'">Languages</button></div>
-                      </div>              
+                        <!--Creating buttons with tag "button"-->
+                        <div class="col"><button class="buttoncontact"
+                                onclick="location.href='#education'">Education</button></div>
+                        <div class="col"><button class="buttoncontact"
+                                onclick="location.href='#experience'">Experiences</button></div>
+                        <div class="col"><button class="buttoncontact"
+                                onclick="location.href='#languages'">Languages</button></div>
+                    </div>
                 </div>
             </div>
-            <div id="education"><h1 class="h2" style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF;">My Education</h1></div>
+            <div id="education" style="margin-bottom: 5%;">
+                <h1 class="h2" style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF;">My
+                    Education</h1>
+            </div>
             <div class="row" style="border-bottom: 3px solid #ffffff; margin-left: 1%; margin-right: 1%;">
                 <div class="col">
-                    <img class="book" alt="icon" src="./images/book-bookmark-regular-24.png"/>
+                    <img class="book" alt="icon" src="./images/book-bookmark-regular-24.png" />
                     <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF;">Colombian High School Diploma</p>
                     <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF;">2014</p>
                 </div>
                 <div class="col">
                 </div>
                 <div class="col">
-                    <img class="utp" alt="icon" src="./images/utp.png"/>
-                    <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF;">General Education Degree in Software development</p>
+                    <img class="utp" alt="icon" src="./images/utp.png" />
+                    <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF;">General Education Degree in Software
+                        development</p>
                     <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF;">2021</p>
                 </div>
                 <div class="col">
                 </div>
             </div>
-            <div class="row">
+            <div class="row" style="margin-bottom: 5%;">
                 <div class="col">
                 </div>
                 <div class="col">
-                    <img class="ecci" alt="icon" src="./images/ecci.png"/>
-                    <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF;">Associate Degree Automation and industrial robotics</p>
+                    <img class="ecci" alt="icon" src="./images/ecci.png" />
+                    <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF;">Associate Degree Automation and
+                        industrial robotics</p>
                     <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF;">2018</p>
                 </div>
                 <div class="col">
                 </div>
                 <div class="col">
-                    <img class="ecci" alt="icon" src="./images/ecci.png"/>
+                    <img class="ecci" alt="icon" src="./images/ecci.png" />
                     <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF;">Mechatronics Engineering Bachelor</p>
                     <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF;">2022</p>
                 </div>
             </div>
-            <div id="languages"><h1 class="h2" style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF;">Languages that I can speak</h1></div>
+            <div id="experience" class="row row-cols-3">
+                <div class="col-md-2">
+                    <div>
+                        <h1 class="h2"
+                            style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF; padding-bottom: 2%;">
+                            My Experience</h1>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <a href="#educationexp"><img class="book" alt="icon"
+                            src="./images/book-bookmark-regular-24.png" /></a>
+                    <p style="font-family: Inter; color: #F3F4F6FF;">Education</p>
+                </div>
+                <div class="col-md-2">
+                    <a href="#dev"><img class="book" alt="icon" src="./images/code-alt-regular-24.png" /></a>
+                    <p style="font-family: Inter; color: #F3F4F6FF;">Development</p>
+                </div>
+            </div>
+            <div id="dev" class="row row-cols-2" style="margin-top: 5%;">
+                <div class="col-md-5">
+                    <img class="devlogo" alt="logo" src="./images/bx-code-block.svg" />
+                </div>
+                <div class="col-md-5">
+                    <h3>Freelance Fullstack Developer</h3>
+                    <p style="font-family: Inter; color: #F3F4F6FF;">Since 2021</p>
+                    <br>
+                    <p style="font-family: Inter; color: #F3F4F6FF;">From 2021, I've been working in Software
+                        Development Industry, doing
+                        projects for different clients. Also, I've been working by my own in pages
+                        with different technologies and taking different courses to keep updated
+                        this industry. In frontend, I've done projects in React and Vue, and of
+                        course working in HTML and CSS, and in backend, different technologies in
+                        nodejs and frameworks like express, mongoose and MySQL, and SpringBoot.
+                        In database, I have experience working in MySQL, SQL, SQLite and MongoDB. </p>
+                </div>
+            </div>
+            <div id="educationexp" class="row row-cols-2" style="margin-top: 5%;">
+                <div class="col-md-5">
+                    <img class="explogo" alt="logo" src="./images/genuinelogo.png" />
+                </div>
+                <div class="col-md-5">
+                    <h3>Computer Science Head Professorship</h3>
+                    <p style="font-family: Inter; color: #F3F4F6FF;">Since 2024</p>
+                    <br>
+                    <p style="font-family: Inter; color: #F3F4F6FF; margin-bottom: 5%;">Since 2024, I have been working
+                        with this growing American institution, teaching young people between 13 and 18 years old the
+                        fundamentals of Computer Science (programming, augmented reality, software development in
+                        Python, HTML, CSS, JavaScript, among other technologies, as well as UI/UX design fundamentals
+                        and agile methodologies). Likewise, I am working on a research project on computational thinking
+                        with this institution, applying the areas explained above. </p>
+                </div>
+
+                <div class="col-md-5">
+                    <img class="explogo" alt="logo" src="./images/logo2.png" />
+                </div>
+                <div class="col-md-5">
+                    <h3>Information, Communication and Technlogy Head Professorship</h3>
+                    <p style="font-family: Inter; color: #F3F4F6FF;">2023</p>
+                    <br>
+                    <p style="font-family: Inter; color: #F3F4F6FF; margin-bottom: 5%;">One of my most recent work
+                        experiences took place in 2023 with this prestigious institution, where I had the opportunity to
+                        teach young people of all ages about office automation concepts, programming (Scratch, mBlock,
+                        Python, HTML, JavaScript) and technological design, taught entirely in English as it is a
+                        bilingual institution, with a focus on the development of STEAM projects. </p>
+                </div>
+                <div class="col-md-5">
+                    <img class="explogo" alt="logo" src="./images/gimgalmas.png" />
+                </div>
+                <div class="col-md-5">
+                    <h3>Robotics Head Professorship</h3>
+                    <p style="font-family: Inter; color: #F3F4F6FF;">2022</p>
+                    <br>
+                    <p style="font-family: Inter; color: #F3F4F6FF; margin-bottom: 5%;">For a year, I have been working
+                        hand in hand with this educational institution to promote teaching to young people of different
+                        ages in mechanical and electronic design and embedded programming with devices such as Arduino
+                        and HaloCode with mBlock and C as programming languages. It is carried out entirely in English
+                        as it is a bilingual institution under Norma's TecPro system, for which it has certification.
+                    </p>
+                </div>
+
+            </div>
+            <div id="languages">
+                <h1 class="h2" style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF;">
+                    Languages that I can speak</h1>
+            </div>
             <div class="row align-items-center">
                 <div class="col">
-                    <img class="languageimg" alt="spanish" src="./images/spain_icon.png"/>
+                    <img class="languageimg" alt="spanish" src="./images/spain_icon.png" />
                     <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF;">Native competence</p>
                 </div>
                 <div class="col">
-                    <img class="languageimg" alt="english" src="./images/uk_icon.png"/>
+                    <img class="languageimg" alt="english" src="./images/uk_icon.png" />
                     <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF;">Professional competence (B2)</p>
                 </div>
                 <div class="col">
-                    <img class="languageimg" alt="portuguese" src="./images/brazil_icon.png"/>
+                    <img class="languageimg" alt="portuguese" src="./images/brazil_icon.png" />
                     <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF;">Beginner- intermediate level</p>
                 </div>
 
@@ -120,19 +236,22 @@
                 <div class="d-flex flex-wrap justify-content-between align-items-stretch py-3 border-top">
                     <!--Column for the email-->
                     <div class="col-md-4 d-flex align-items-center">
-                            <img class="footericons" alt="mail" src="./images/mail_icon.svg"/></li>
-                            <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF; margin-bottom: 0;">castiblanco.castaneda.alyson.val@gmail.com</p>              
+                        <img class="footericons" alt="mail" src="./images/mail_icon.svg" /></li>
+                        <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF; margin-bottom: 0;">
+                            castiblanco.castaneda.alyson.val@gmail.com</p>
                     </div>
                     <!--Column for social media-->
                     <div class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                        <a target="_blank" href="https://www.linkedin.com/in/alyson-valeria-castiblanco-casta%C3%B1eda/"><img class="footericons" alt="Linkedin" src="./images/linkedin_icon.svg"/></a>
-                        <a target="_blank" href="https://github.com/ALYSONCASTIBLANCO"><img class="footericons" alt="GitHub" src="./images/github_icon.svg"/></a>
+                        <a target="_blank"
+                            href="https://www.linkedin.com/in/alyson-valeria-castiblanco-casta%C3%B1eda/"><img
+                                class="footericons" alt="Linkedin" src="./images/linkedin_icon.svg" /></a>
+                        <a target="_blank" href="https://github.com/ALYSONCASTIBLANCO"><img class="footericons"
+                                alt="GitHub" src="./images/github_icon.svg" /></a>
                     </div>
 
-                </div>            
+                </div>
             </footer>
         </main>
     </div>
-
 </body>
 </html>

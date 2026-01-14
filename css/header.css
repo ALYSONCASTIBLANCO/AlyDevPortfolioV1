@@ -1,0 +1,62 @@
+.hamburguer {
+  cursor: pointer;
+  color: #F3F4F6;
+  text-align: right;
+  font-size: xx-large;
+}
+
+.header-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 48px;
+  background-color: #4B3FB3 !important;
+  right: -80%;
+  background: transparent;
+  text-align: right;
+  padding: 1.25rem 2.25rem;
+  width: 40%;
+  min-height: calc(100vh - 48px);
+  z-index: 2;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.header-menu a{
+  color: #F3F4F6;
+  padding: 20px 0 0 20px;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.header-menu a.active {
+  transform: scale(1.05);
+  font-weight: 700; 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  font-weight: bold;
+}
+.header-menu a:hover{
+  transform: scale(1.05);
+}
+
+
+.header-menu.active {
+  right: 0;
+}
+
+  /* Image 1 */
+.lang_icons {
+  width: 35px; 
+  height: auto; 
+  border-radius: 0px 0px 0px 0px; 
+}
+
+/*Microinteractions for icons (mobile version): Here identifies if hover is not used*/
+@media(hover: none){
+  .header-menu a:active, .lang_icons:active{
+    transform: scale(1.25);
+  }
+}

@@ -1,0 +1,30 @@
+.pagefooter1{
+  position: absolute;
+  bottom:0;
+  margin: 0;
+}
+.footericons{
+  width: 34px; 
+  height: 36px; 
+  border-radius: 0px;
+  filter: invert(1);/*Tone image change*/
+  padding-right: 1%;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.footericons:hover{
+    transform: scale(1.25);
+}
+/*Changes in mobile version:*/
+@media (max-width: 450px) {
+    #mail-text{
+        display: none;
+    }
+}
+/*Microinteractions for icons (mobile version): Here identifies if hover is not used*/
+@media(hover: none){
+  .footericons:active{
+    transform: scale(1.25);
+  }
+}

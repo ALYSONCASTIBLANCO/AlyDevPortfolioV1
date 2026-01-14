@@ -17,41 +17,7 @@
 <body>
     <!--We will use a container fluid to distribute all contents in 100% width.-->
     <div class="container-fluid">
-        <header>
-            <!--Row that will contain the header-->
-            <div class="row">
-                <!--Column to put the logo-->
-                <div class="col-lg">
-                    <a href="./Homepage.html">
-                        <h1 class="h1"
-                            style="font-family: Arial, Helvetica, sans-serif; color: #F3F4F6FF;  font-weight: 700;">
-                            AlyDev</h1>
-                    </a>
-                </div>
-                <!--Column to put the quick access bar menu-->
-                <div class="col-lg-4">
-                    <div class="header-menu">
-                        <a href="./AboutMe.html">
-                            <ul class="header-menu-item">About me</ul>
-                        </a>
-                        <a href="./Projects.html">
-                            <ul class="header-menu-item">My Projects</ul>
-                        </a>
-                        <a href="./Contact.html">
-                            <ul class="header-menu-item">Contact</ul>
-                        </a>
-                        <ul class="header-menu-item"><img class="lang_icons" alt="Esp"
-                                src="./images/spain_icon.png"></img></ul>
-                        <a href="./Homepage.html">
-                            <ul class="header-menu-item"><img class="lang_icons" alt="Eng"
-                                    src="./images/uk_icon.png"></img></ul>
-                        </a>
-                        <ul class="header-menu-item"><img class="lang_icons" alt="Por"
-                                src="./images/brazil_icon.png"></img></ul>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <div id="header"></div>
         <main>
             <br>
             <!--h1 class from Bootstrap to customize the texts-->
@@ -279,29 +245,15 @@
                     </button>
                 </div>
             </div>
-            <footer>
-                <!--An additional row for the footer-->
-                <!--A flex box to adapt the content, with padding, contenf justified and aligned-->
-                <div class="d-flex flex-wrap justify-content-between align-items-stretch py-3 border-top">
-                    <!--Column for the email-->
-                    <div class="col-md-4 d-flex align-items-center">
-                        <img class="footericons" alt="mail" src="./images/mail_icon.svg" /></li>
-                        <p class="fs-6" style="font-family: Inter; color: #F3F4F6FF; margin-bottom: 0;">
-                            castiblanco.castaneda.alyson.val@gmail.com</p>
-                    </div>
-                    <!--Column for social media-->
-                    <div class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                        <a target="_blank"
-                            href="https://www.linkedin.com/in/alyson-valeria-castiblanco-casta%C3%B1eda/"><img
-                                class="footericons" alt="Linkedin" src="./images/linkedin_icon.svg" /></a>
-                        <a target="_blank" href="https://github.com/ALYSONCASTIBLANCO"><img class="footericons"
-                                alt="GitHub" src="./images/github_icon.svg" /></a>
-                    </div>
-                </div>
-            </footer>
+            <div id="footer"></div>
         </main>
     </div>
-
+    <!--Add control functionalities in header-->
+    <script src="./js/headerInjection.js"></script>
+    <!--Load Header and Footer-->
+    <script src="./js/components.js"></script>
+    <!--Basic interactions in JS.-->
+    <script src="./js/interactions.js"></script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

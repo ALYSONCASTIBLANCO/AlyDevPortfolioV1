@@ -54,6 +54,67 @@ body{
 a:link, a:visited, a:active, a::after{
   text-decoration:none;
 }
+/*Styles for timeline:*/
+
+.timeline{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px; /* altura total controlada */
+}
+/*The element ::before is used to create pseudoelements that won't affect the DOM flow, but can be present as a background. As
+a pencil line. You can put icons, texts or other elements using attr().*/
+.timeline::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+.timeline-item{
+  position: relative;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+/*Draw the dots in the timeline*/
+.timeline-item::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  /*Synchronize the position with the line*/
+  transform: translateY(-50%);
+}
+.timeline-content {
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.timeline-content:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: scale(1.25);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  bottom: 10px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  top: 10px;
+}
 .utp{
   width: 30%;
 }
@@ -124,5 +185,54 @@ p{
 @media(hover: none){
   .icons-interactions:active{
     transform: scale(1.25);
+  }
+  .timeline-content:active{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: scale(1.25);
+}
+}
+@media (max-width: 768px) {
+
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 32px; /* espacio para línea + puntos */
+    height: auto;
+  }
+
+  /* Línea vertical */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 2px;
+    height: 100%;
+    background: white;
+  }
+
+  .timeline-item {
+    position: relative;
+    display: flex;
+  }
+
+  /* Punto */
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0.4em;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+  }
+
+  .timeline-content {
+    position: relative !important;
+    width: 100%;
+    text-align: left;
   }
 }

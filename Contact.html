@@ -19,33 +19,42 @@
                 <h1 class="h1" style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF; margin-bottom: 5%;">
                     Contact me</h1>
             </div>
-            <div class="row justify-content-around align-items-top" style="margin-bottom: 5%;">
-                <div class="col">
+            <!--In this point, we use different rules in Bootstrap: in all breakpoints, we will use 
+            display: flex, in mobile will be flex-column, from breakpoint md we will put all in row,
+            justify content around and align items from start.-->
+            <div class="d-flex flex-column flex-md-row justify-content-md-around align-items-md-start" style="margin-bottom: 5%;">
+                <!--Here the columns will have a margin top of mode 3 and in lg won't have margin.
+                Check this information in Utilities -> Spacing -->
+                <div class="col mt-3 mt-lg-0">
                     <h1 class="h2" style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #F3F4F6FF;">Main contact channels</h1>
                     <div class="row row-cols-3">
-                        <div class="col-md-4"><a target="_blank" href="tel:+573123949192"><img class="contacticons" alt="WhatsApp" src="./images/bxl-whatsapp.svg"/></a></div>
-                        <div class="col-md-4"><img class="contacticons" alt="Mail" src="./images/mail_icon.svg"/></div>
-                        <div class="col-md-4"><a target="_blank" href="https://www.linkedin.com/in/alyson-valeria-castiblanco-casta%C3%B1eda/"><img class="contacticons" alt="Linkedin" src="./images/linkedin_icon.svg"/></a></div>
+                        <div class="col-md-4"><a target="_blank" href="tel:+573123949192"><img class="contacticons icons-interactions" alt="WhatsApp" src="./images/bxl-whatsapp.svg"/></a></div>
+                        <div class="col-md-4" id="mail-button"><img class="contacticons icons-interactions" alt="Mail" src="./images/mail_icon.svg"/></div>
+                        <div class="col-md-4"><a target="_blank" href="https://www.linkedin.com/in/alyson-valeria-castiblanco-casta%C3%B1eda/"><img class="contacticons icons-interactions" alt="Linkedin" src="./images/linkedin_icon.svg"/></a></div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mt-5 mt-lg-0">
                     <h3>Send me a message and contact with me.</h3>
-                    <form>
+                    <form class="contact-form" novalidate>
+                        <label for="" class="form-label" style="color: gray;">All fields with (*) are required.</label>
                         <div class="mb-3">
-                            <label for="name" class="form-label" style="color: #ffffff;">Name and lastname</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name and lastname" required/>    
+                            <label for="name" class="form-label" style="color: #ffffff;">Name and lastname*</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name and lastname" required/>
+                            <div class="invalid-feedback">Please, type your name</div>    
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label" style="color: #ffffff";>Your email</label>
-                            <input type="email" class="form-control" id="email" placeholder="example@mail.com" required/>    
+                            <label for="email" class="form-label" style="color: #ffffff";>Your email*</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="example@mail.com" required/>
+                            <div class="invalid-feedback">Please, type a valid email to establish contact with you!</div>    
                         </div>
                         <div class="mb-3">
-                            <label for="subject" class="form-label" style="color: #ffffff";>Your subject</label>
-                            <input type="text" class="form-control" id="subject" placeholder="What's your subject?" required/>    
+                            <label for="subject" class="form-label" style="color: #ffffff";>Your subject*</label>
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="What's your subject?" required/>
+                            <div class="invalid-feedback">Please, don't forget to type your subject!</div>      
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label" style="color: #ffffff";>Write your message</label>
-                            <textarea type="text" class="form-control" id="message" rows="3" placeholder="Write your message here"></textarea>    
+                            <textarea type="text" class="form-control" name="message" id="message" rows="3" placeholder="Write your message here"></textarea>    
                         </div>
                         <div style="display: flex; justify-content:right"><button type="submit" class="btn btn-primary">Send</button></div>
                     </form>                
@@ -60,6 +69,8 @@
     <script src="./js/components.js"></script>
     <!--Basic interactions in JS.-->
     <script src="./js/interactions.js"></script>
+    <!--Script for form functionalities-->
+    <script src="./js/validationForm.js"></script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

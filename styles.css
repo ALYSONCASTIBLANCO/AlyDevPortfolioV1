@@ -181,6 +181,20 @@ p{
   transform: scale(1.25);
 }
 
+ul{
+  list-style-type: none;
+}
+/*Styles for experience section*/
+#experience_content > div{
+	display: none;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.active{
+  display: flex !important;
+}
+
 /*Microinteractions for icons (mobile version): Here identifies if hover is not used*/
 @media(hover: none){
   .icons-interactions:active{

@@ -191,8 +191,11 @@ ul{
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
 }
-.active{
+#experience_content div.active{
   display: flex !important;
+}
+#experience_header li.active{
+  transform: scale(1.5);
 }
 
 /*Microinteractions for icons (mobile version): Here identifies if hover is not used*/

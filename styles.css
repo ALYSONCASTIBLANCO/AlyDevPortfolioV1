@@ -131,6 +131,7 @@ a pencil line. You can put icons, texts or other elements using attr().*/
   width: 100%; 
   height: auto;
   border-radius: 0px;
+  overflow: visible;
 }
 .skillsicons2{
   width: 70%; 
@@ -176,6 +177,7 @@ p{
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+  overflow: visible;
 }
 .icons-interactions:hover{
   transform: scale(1.25);
@@ -198,6 +200,145 @@ ul{
   transform: scale(1.5);
 }
 
+/*Styles for Technologies section scroller*/
+.tech-slider {
+    overflow: hidden;
+    position: relative;
+    background: none;
+}
+
+.tech-track {
+    display: inline-block; /* Display the element */
+    white-space: nowrap;   /* keep the 8 columns and keep the right size. */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll-left 15s linear infinite;
+    -webkit-animation: scroll-left 15s linear infinite;
+    animation: scroll-left 15s linear infinite;
+}
+.tech-track-right {
+    display: inline-block; /* Display the element */
+    white-space: nowrap;   /* keep the 8 columns and keep the right size. */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -moz-animation: scroll-right 15s linear infinite;
+    -webkit-animation: scroll-right 15s linear infinite;
+    animation: scroll-right 15s linear infinite;
+}
+.tech-track:hover, .tech-track-right:hover{
+  animation-play-state: paused;
+}
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }  
+}
+
+@-moz-keyframes scroll-right {
+    0% {
+        -moz-transform: translateX(-100%);
+    }
+    100% {
+        -moz-transform: translateX(100%);
+    }
+}
+
+@-webkit-keyframes scroll-right {
+    0% {
+        -webkit-transform: translateX(-100%);
+    }
+    100% {
+        -webkit-transform: translateX(100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }  
+}
+
+/* capa intermedia */
+.tech-row {
+  flex-wrap: nowrap; /* keeps working for Bootstrap in the 8 columns */
+}
+/* controls the hover in the icons */
+.icon-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+.icon-wrapper img {
+  width: 80%;
+  height: 80%;
+  transition: transform .3s ease;
+}
+
+.icon-wrapper:hover img {
+  /*Filter is useful when you need to highlight something but you don't need to modify the layout.
+  Also, drop-shadow is to do the shadow to the element, not the box*/
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,.4));
+  transform: translateY(-4px);
+}
+
+/*Styles for projects section*/
+#projects_content > div{
+	display: none;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+#projects_content div.active{
+  display: block;
+}
+#projects_header li.active{
+  transform: scale(1.5);
+}
 /*Microinteractions for icons (mobile version): Here identifies if hover is not used*/
 @media(hover: none){
   .icons-interactions:active{

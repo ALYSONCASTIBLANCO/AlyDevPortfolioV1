@@ -10,6 +10,11 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--Inserting CSS Sheet for customized styles-->
     <link rel="stylesheet" href="styles.css" />
+    <!--Inserting CDN for Phosphor Icons-->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <title>AlyDev- My Projects</title>
 </head>
@@ -217,7 +222,7 @@
                 <div id="devprojects">
                     <div class="row row-cols-1 row-cols-lg-4 column-gap-1 row-gap-1 justify-content-center my-2"
                         style="margin-left: 0.5%; margin-right: 0.5%;">
-                        <div class="card">
+                        <div class="card lightbox" data-project="jinndo">
                             <img alt="Project" src="./images/projects/jinndo.png" class="card-img-top" />
                             <div class="card-body">
                                 <h5>Jinndo Radio</h5>
@@ -231,7 +236,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card lightbox" data-project="neureka">
                             <img alt="Project" src="./images/projects/neureka.png" class="card-img-top" />
                             <div class="card-body">
                                 <h5>Neureka GS</h5>
@@ -250,7 +255,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card lightbox" data-project="vaticano">
                             <img alt="Project" src="./images/projects/vaticano.png" class="card-img-top" />
                             <div class="card-body">
                                 <h5>Cidade do Vaticano Page</h5>
@@ -262,7 +267,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card lightbox" data-project="pedro">
                             <img alt="Project" src="./images/projects/pedro_portfolio.png" class="card-img-top" />
                             <div class="card-body">
                                 <h5>Pedro Infante's Professional Portfolio</h5>
@@ -275,7 +280,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card lightbox" data-project="salvando">
                             <img alt="Project" src="./images/projects/salvando4patas.PNG" class="card-img-top" />
                             <div class="card-body">
                                 <h5>Salvando4Patas al 100%</h5>
@@ -287,7 +292,7 @@
                                             class="skillsicons" alt="link" src="./images/github_icon.svg" /></a></div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card lightbox" data-project="coches">
                             <img alt="Project" src="./images/projects/cochesdeocc.PNG" class="card-img-top" />
                             <div class="card-body">
                                 <h5>Coches de Occidente</h5>
@@ -301,7 +306,7 @@
                                             class="skillsicons" alt="link" src="./images/github_icon.svg" /></a></div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card lightbox" data-project="betorplay">
                             <img alt="Project" src="./images/projects/betorplay.PNG" class="card-img-top" />
                             <div class="card-body">
                                 <h5>BetOrPlay.com</h5>
@@ -314,7 +319,7 @@
                                             class="skillsicons" alt="link" src="./images/github_icon.svg" /></a></div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card lightbox" data-project="yourtask">
                             <img alt="Project" src="./images/projects/yourtaskapi.PNG" class="card-img-top" />
                             <div class="card-body">
                                 <h5>Your Task API</h5>
@@ -327,7 +332,7 @@
                                             class="skillsicons" alt="link" src="./images/github_icon.svg" /></a></div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card lightbox" data-project="thesis">
                             <img alt="Project" src="./images/projects/Diapositiva2.png" class="card-img-top" />
                             <div class="card-body">
                                 <h5>Hardware In The Loop Python HMI</h5>
@@ -344,7 +349,7 @@
                                             alt="link" src="./images/link-alt-regular-24.png" /></a></div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card lightbox" data-project="programmingpage">
                             <img alt="Project" src="./images/projects/myprogramming.PNG" class="card-img-top" />
                             <div class="card-body">
                                 <h5>My Programming Challenges Page</h5>
@@ -373,6 +378,8 @@
     <script src="./js/components.js"></script>
     <!--Script for tabs interaction-->
     <script src="./js/tabsNavigationProjects.js"></script>
+    <!--Script for sliders in projects-->
+    <script src="./js/sliderLightbox.js"></script>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
